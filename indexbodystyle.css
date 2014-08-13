@@ -1,0 +1,76 @@
+#header{
+height:40px;
+background-color:#85FFD6;
+margin-top:0;
+}
+
+#footer{
+background-color:#85FFD6;
+height:50px
+}
+#photo{
+width:20%;
+}
+#about{
+text-align:center;
+width:80%
+}
+#hi
+{
+font-size:40px;
+color:#0000ff;
+animation:textchange 3s infinite;
+animation-timing-function:linear;
+-webkit-animation:textchange 3s infinite;
+-webkit-animation-timing-function:linear;
+}
+#name
+{
+font-size:36px;
+color:#0000ff;
+animation:textchange 3s infinite;
+animation-timing-function:linear;
+-webkit-animation:textchange 3s infinite;
+-webkit-animation-timing-function:linear;
+}
+#cs
+{
+font-size:32px;
+color:#0000ff;
+animation:textchange 3s infinite;
+animation-timing-function:linear;
+-webkit-animation:textchange 3s infinite;
+-webkit-animation-timing-function:linear;
+}
+#at
+{
+font-size:28px;
+color:#0000ff;
+animation:textchange 3s infinite;
+animation-timing-function:linear;
+-webkit-animation:textchange 3s infinite;
+-webkit-animation-timing-function:linear;
+}
+
+#uic
+{
+font-size:25px;
+color:#0000ff;
+animation:textchange 3s infinite;
+animation-timing-function:linear;
+-webkit-animation:textchange 3s infinite;
+-webkit-animation-timing-function:linear;
+
+}
+@keyframes textchange
+{
+from {color:#0000ff;}
+to {color:#ff0000;}
+}
+@-webkit-keyframes textchange
+{
+from {color:#0000ff;}
+to {color:#ff0000;}
+}
+
+

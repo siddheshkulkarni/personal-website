@@ -1,0 +1,116 @@
+<html>
+<head>
+<title> Siddhesh Kulkarni's Personal Website </title>
+<link rel="stylesheet" type="text/css" href="indexbodystyle.css" >
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+
+var imagerotator=document.getElementById('imagerotate');
+var imageDirectory='images/';
+var delaysec=1;
+var imgarray=['sidd.jpg','sidddwntwn.jpg','siddindiahouse.jpg'];
+var count=0;
+var changeimg=function(){
+var imagelen=imgarray.length;
+imagerotator.src=imageDirectory+imgarray[count++];
+if(count==imagelen)
+{
+count=0;
+}
+};
+setInterval(changeimg,delaysec*1000);
+});
+
+$(document).ready(function(){
+$("#education").click(function(){
+$("#msbe").slideToggle("slow");
+  });  
+});
+
+$(document).ready(function(){
+$("#languages").click(function(){
+$("#ehm").slideToggle("slow");
+  });  
+});
+
+$(document).ready(function(){
+$("#hobbies").click(function(){
+$("#ctcp").slideToggle("slow");
+  });  
+});
+
+$(document).ready(function(){
+$("#composing").click(function(){
+$("#poem").slideToggle("slow");
+  });
+});
+
+
+</script>
+<script src="script.js"></script>
+</head>
+<body >
+<div id="header" >
+<h1 style="text-align:center" ><b>Siddhesh Kulkarni</b></h1>
+</div>
+<style="margin-left:85px"><br/>
+<div id="menuItems" style="text-align:center">
+ <a href="index.html"><input type="image" id="home" src="home.jpeg"></a> &nbsp;&nbsp;
+<a href="Resume.html"><input type="image" id="resume" src="resume.jpeg"></a>&nbsp;&nbsp;
+<!--<a href="Projects.html"><input type="image" id="projects" src="projects.jpeg"></a>&nbsp;&nbsp;-->
+<a href="Contacts.html"><input type="image" id="contacts" src="contacts.jpeg"></a>&nbsp;&nbsp;
+</div>
+<br/>
+<table width="100%">
+  <tr>
+    <td id="photo">
+    <img src="images/sidd.jpg" width="250" height="250" id="imagerotate" style="margin-left:85px" >
+    </td>
+    <td id="about">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div id="hi"> Hi</div>
+    <br/> 
+    <div id="name">Myself Siddhesh Kulkarni,</div>
+    <br/> 
+    <div id="cs">Looking for Fulltime Role</div>
+    <br/>
+    <div id="at">as</div>
+    <br/> 
+    <div id="uic" >Software/ Web Developer </div>
+    </td>
+ </tr>
+</table>
+   
+<h3><div id="education" style="margin-left:85px"><u>Education</u> (click to view)</div></h3>
+<br/>   
+ <div id="msbe" style="display:none;margin-left:85px" >
+<h3> Master's in Computer Science- University of Illinois at Chicago</h3><br/>
+<h3> Bachelor's in Computer Science- Datta Meghe College of Engineering,India</h3><br/>
+ </div>
+ <div id="languages" style="margin-left:85px">
+<h3><u>Languages</u> (click to view)</h3><br/>
+ </div>
+   <div id="ehm" style="display:none;margin-left:85px">
+<h3>English, Hindi, Marathi</h3><br/>
+   </div>
+<div id="hobbies" style="margin-left:85px;margin-left:85px">
+<h3><u>Hobbies</u>  (click to view)</h3><br/>
+</div>
+<div id="ctcp" style="margin-left:85px;display:none" >
+<h3><div id="composing">Composing Poems(click to view)</div> </h3> <br/>
+
+<div id="poem" style="margin-left:85px;display:none" >
+<h3>1. Poem on Chicago </h3><br/>
+<h3>2. Friendship Poem</h3><br/>
+</div>
+<h3>Traveling</h3><br/>
+<h3>Cracking Jokes</h3><br/>
+<h3>Playing Ping Pong</h3><br/>
+</div>
+</style>
+
+<div id="footer"></div>
+</body>
+</html>
